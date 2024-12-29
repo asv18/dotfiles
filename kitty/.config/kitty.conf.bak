@@ -1,0 +1,28 @@
+# font_family IBM Plex Mono
+# bold_font        auto
+# italic_font      auto
+# bold_italic_font auto
+
+font_size 14.0
+# foreground #FFFFFF
+# background #000000
+
+cursor_shape beam
+
+map ctrl+shift+l next_layout
+map ctrl+alt+t goto_layout tall
+
+# BEGIN_KITTY_THEME
+# Afterglow
+include current-theme.conf
+background_opacity 0.95
+wayland_titlebar_color background
+# END_KITTY_THEME
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="DepartureMono Nerd Font"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
