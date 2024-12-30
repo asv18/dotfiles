@@ -26,6 +26,8 @@ return {
 				"lua-language-server",
 				"clangd",
 				"rust-analyzer",
+				"clang-format",
+				"codelldb",
 			}
     })
 

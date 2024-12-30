@@ -88,6 +88,12 @@ return {
           capabilities = capabilities,
         })
       end,
+			["clangd"] = function()
+				lspconfig["clangd"].setup({
+					capabilities = capabilities,
+					filetypes = { "cpp", "c", }
+				})
+			end,
 			-- ["rust-analyzer"] = function()
 			-- 	lspconfig["rust-analyzer"].setup({
 			-- 		capabilities = capabilities,
