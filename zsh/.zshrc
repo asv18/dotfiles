@@ -145,3 +145,5 @@ alias crontab="EDITOR=nano /usr/bin/crontab"
 alias gauth="gpg --decrypt --output ~/Documents/Tokens/pat.txt ~/Documents/Tokens/pat.gpg && xclip -sel c < ~/Documents/Tokens/pat.txt && rm ~/Documents/Tokens/pat.txt"
 alias tnew="tmux new -s"
 alias tmold="tmux a"
+alias adios='sudo shutdown -h +1 "adiosing in a minute"'
+alias holdup="sudo shutdown -c"
