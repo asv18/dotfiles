@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="xiong-chiamiov-plus" # set by `omz`
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /home/linuxbrew/.linuxbrew/opt/geometry/share/geometry/geometry.zsh
+# source /home/linuxbrew/.linuxbrew/opt/geometry/share/geometry/geometry.zsh
 
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bash_profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -108,9 +108,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 unsetopt RM_STAR_SILENT
 
 
-GEOMETRY_STATUS_COLOR="magenta"
-GEOMETRY_STATUS_SYMBOL="♜"
-GEOMETRY_STATUS_SYMBOL_ERROR="♖"
+# GEOMETRY_STATUS_COLOR="magenta"
+# GEOMETRY_STATUS_SYMBOL="♜"
+# GEOMETRY_STATUS_SYMBOL_ERROR="♖"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
