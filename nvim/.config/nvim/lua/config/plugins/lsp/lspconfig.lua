@@ -94,6 +94,12 @@ return {
 					filetypes = { "cpp", "c", }
 				})
 			end,
+			["pyright"] = function()
+				lspconfig["pyright"].setup({
+					capabilities = capabilities,
+					filetypes = { "python" },
+				})
+			end,
 			-- ["rust-analyzer"] = function()
 			-- 	lspconfig["rust-analyzer"].setup({
 			-- 		capabilities = capabilities,

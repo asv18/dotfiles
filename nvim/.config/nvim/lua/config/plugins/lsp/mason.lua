@@ -22,19 +22,21 @@ return {
           package_uninstalled = "✗",
         },
       },
-			ensure_installed = {
-				"lua-language-server",
-				"clangd",
-				"rust-analyzer",
-				"clang-format",
-				"codelldb",
-			}
-    })
+		})
 
     mason_lspconfig.setup()
 
     mason_tool_installer.setup({
       ensure_installed = {
+				"lua-language-server",
+				"clangd",
+				"clang-format",
+				"codelldb",
+				"pyright",
+				-- "mypy",
+				"black",
+				"ruff",
+				"rust-analyzer",
       	"prettierd",
 				"eslint_d",
 				"stylua",
