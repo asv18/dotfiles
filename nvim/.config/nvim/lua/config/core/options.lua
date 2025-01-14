@@ -19,7 +19,7 @@ opt.cursorline = true
 
 opt.signcolumn = "yes"
 
-opt.backspace = "indent,eolmstart"
+opt.backspace = "indent,eol,start"
 
 opt.splitright = true
 opt.splitbelow = true
