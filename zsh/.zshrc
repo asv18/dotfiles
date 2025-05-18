@@ -148,3 +148,5 @@ alias tmold="tmux a"
 alias adios='sudo shutdown -h +1 "adiosing in a minute"'
 alias holdup="sudo shutdown -c"
 alias vitals="watch -n 2 nvidia-smi"
+
+eval $(thefuck --alias)
