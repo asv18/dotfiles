@@ -149,5 +149,6 @@ alias adios='sudo shutdown -h +1 "adiosing in a minute"'
 alias holdup="sudo shutdown -c"
 alias gpu_vitals="watch -n 2 nvidia-smi"
 alias vitals="watch -n 2 sensors"
+alias cpu_vitals="watch \"sensors | sed -n '/asusec-isa-0000/,/^$/p'\""
 
 eval $(thefuck --alias)
