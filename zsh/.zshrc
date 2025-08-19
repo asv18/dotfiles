@@ -102,10 +102,10 @@ source $ZSH/oh-my-zsh.sh
 
 # source /home/linuxbrew/.linuxbrew/opt/geometry/share/geometry/geometry.zsh
 
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bash_profile
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bash_profile
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-unsetopt RM_STAR_SILENT
+# unsetopt RM_STAR_SILENT
 
 
 # GEOMETRY_STATUS_COLOR="magenta"
@@ -127,7 +127,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-unset SSH_ASKPASS
+# unset SSH_ASKPASS
 
 # Proton stuff
 export PROTON_HIDE_NVIDIA_GPU=0
@@ -135,11 +135,11 @@ export PROTON_ENABLE_NVAPI=1
 export VK3D_CONFIG=dxr,dxr11
 export PROTON_ENABLE_NGX_UPDATER=1
 
-export PATH="$PATH:/home/thebismuth83/Flutter/flutter/bin"
+# export PATH="$PATH:/home/thebismuth83/Flutter/flutter/bin"
 export PATH="$PATH:/home/thebismuth83/.cargo/bin"
 
 alias sp="flatpak run io.github.hrkfdn.ncspot"
-alias sup="sudo dnf upgrade && cbonsai -l -p -m \"all done!\""
+alias sup="sudo zypper dup && cbonsai -l -p -m \"all done!\""
 alias willsmith="sudo reboot"
 alias crontab="EDITOR=nano /usr/bin/crontab"
 alias gauth="gpg --decrypt --output ~/Documents/Tokens/pat.txt ~/Documents/Tokens/pat.gpg && xclip -sel c < ~/Documents/Tokens/pat.txt && rm ~/Documents/Tokens/pat.txt"
@@ -150,5 +150,3 @@ alias holdup="sudo shutdown -c"
 alias gpu_vitals="watch -n 2 nvidia-smi"
 alias vitals="watch -n 2 sensors"
 alias cpu_vitals="watch \"sensors | sed -n '/asusec-isa-0000/,/^$/p'\""
-
-eval $(thefuck --alias)
