@@ -137,6 +137,7 @@ export PROTON_ENABLE_NGX_UPDATER=1
 
 # export PATH="$PATH:/home/thebismuth83/Flutter/flutter/bin"
 export PATH="$PATH:/home/thebismuth83/.cargo/bin"
+export PATH="$HOME/.local/bin:$PATH"
 
 alias sp="flatpak run io.github.hrkfdn.ncspot"
 alias sup="sudo zypper dup && cbonsai -l -p -m \"all done!\""
@@ -150,3 +151,4 @@ alias holdup="sudo shutdown -c"
 alias gpu_vitals="watch -n 2 nvidia-smi"
 alias vitals="watch -n 2 sensors"
 alias cpu_vitals="watch \"sensors | sed -n '/asusec-isa-0000/,/^$/p'\""
+
